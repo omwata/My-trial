@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Info</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: ghostwhite;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      background-color: gray;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    header img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      margin: 10px 0;
+    }
+
+    header p {
+      color: white;
+      font-style: italic;
+      text-decoration: solid;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav h3 {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav h3 a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    nav h3 a:hover {
+      color: yellowgreen;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form div {
+      margin-bottom: 15px;
+    }
+
+    form div label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form textarea {
+      resize: vertical;
+    }
+
+    form input[type="submit"] {
+      background-color: gray;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: darkgray;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer p:last-of-type {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="C:\Users\user\Desktop\Omwata\Personal\logo.png" alt="Logo" height="50" width="50" />
+      <h1>Tigs Collection</h1>
+      <p>Dare dream</p>
+    </div>
+  </header>
+  <nav>
+    <h3><a href="Home.html">Home Page</a></h3>
+    <h3><a href="personal info.html">Personal Information</a></h3>
+    <h3><a href="Products.html">Products</a></h3>
+    <h3><a href="contact.html">Contact Us</a></h3>
+  </nav>
+  <main>
+    <p>Fill in your personal information below:</p>
+    <form>
+      <div>
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" required />
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" required />
+      </div>
+      <div>
+        <label for="county">County:</label>
+        <select id="county" required>
+          <option value="" disabled selected>Select</option>
+          <option>Baringo</option>
+          <option>Bomet</option>
+          <option>Bungoma</option>
+          <option>Busia</option>
+          <option>Kisumu</option>
+          <option>Siaya</option>
+          <option>Homabay</option>
+          <option>Migori</option>
+        </select>
+      </div>
+      <div>
+        <label for="opinion">What is your opinion about us?</label>
+        <textarea id="opinion" maxlength="300" required></textarea>
+      </div>
+      <div>
+        <label for="bought-before">Have you ever bought from us?</label>
+        <select id="bought-before" required>
+          <option value="" disabled selected>Select</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div>
+        <label>Check if you have any reservations:</label>
+        <input type="checkbox" id="reservations" />
+      </div>
+      <div>
+        <label for="reservation-details" style="color: red; font-style: italic;">If checked above, explain:</label>
+        <textarea id="reservation-details" maxlength="100"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Save" />
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 - Tigs Mwenyewe</p>
+      <p>Contact us:</p>
+      <p>Email: omwata@gmail.com</p>
+      <p>Phone: +254707330710 / +254787052271</p>
+    </div>
+  </footer>
+</body>
+</html>

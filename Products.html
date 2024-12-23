@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Info</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    body {
+      background-color: ghostwhite;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      background-color: gray;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+
+    header h1 {
+      margin: 10px 0;
+    }
+
+    header p {
+      text-decoration: solid;
+      color: white;
+      font-style: italic;
+    }
+
+    header img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    nav {
+      text-align: center; 
+      margin: 20px 0;  
+    }
+
+    nav h3 {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav h3 a {
+      text-decoration: none;
+      color: black;
+      font: bold;
+    }
+
+    nav h3 a:hover {
+      color: yellowgreen;
+    }
+
+    main {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+    }
+    /* Table Styling */
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    table th, table td {
+      border: 1px solid gray;
+      padding: 10px;
+    }
+
+    table th {
+      background-color: gray;
+      color: white;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+      background-color: lightgray;
+    }
+
+    /* Notice Styling */
+    .notice {
+      text-align: center;
+      color: red;
+      font-style: italic;
+      margin: 10px 0;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: gray;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      margin-top: auto;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer p:last-of-type {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="C:\Users\user\Desktop\Omwata\Personal\logo.png" alt="Logo" height="50" width="50" />
+      <h1>Tigs Collection</h1>
+      <p><i><b>Dare dream</b></i></p>
+    </div>
+  </header>
+  <nav>
+    <h3><a href="Home.html">Home Page</a></h3>
+    <h3><a href="personal info.html">Personal Information</a></h3>
+    <h3><a href="Products.html">Products</a></h3>
+    <h3><a href="contact.html">Contact Us</a></h3>
+  </nav>
+  <main>
+    <p>These are our products in store:</p>
+    <div class="notice">
+      Hurry!!!! Get yours while stock last
+    </div>
+    <table>
+      <tr>
+        <th>Item</th>
+        <th>Small</th>
+        <th>Medium</th>
+        <th>Large</th>
+        <th>XXL</th>
+      </tr>
+      <tr>
+        <td>T-shirt</td>
+        <td>20</td>
+        <td>60</td>
+        <td>80</td>
+        <td>100</td>
+      </tr>    
+      <tr>  
+        <td>Jump Suit</td>
+        <td>50</td>
+        <td>100</td>
+        <td>250</td>
+        <td>4</td>
+      </tr>   
+      <tr>   
+        <td>Shoes</td>
+        <td>600</td>
+        <td>500</td>
+        <td>20</td>
+        <td>0</td>
+      </tr>
+    </table>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 - Tigs Mwenyewe</p>
+      <p>Contact us:</p>
+      <p>Email: omwata@gmail.com</p>
+      <p>Phone: +254707330710 / +254787052271</p>
+    </div>
+  </footer>
+</body>
+</html>
